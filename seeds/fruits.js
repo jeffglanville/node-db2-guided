@@ -1,6 +1,6 @@
 
 exports.seed = async function(knex) {
-  await knex("fruits").truncate
+  await knex("fruits").truncate()
 
   await knex("fruits").insert([
     { name: "dragon fruit", avgWeightOz: 16.7, delicious: true, color: "red" },
